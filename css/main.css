@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'OKDDUNG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKDDUNG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 14px;
+    min-width: 1450px;
+    line-height: 1.5;
+    color: #333;
+}
+
+header {
+    border-bottom: 2px solid red;
+}
+
+.header_inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb>li {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 40px;
+}
+
+.gnb>li {
+    position: relative;
+}
+
+.gnb>li>a:hover {
+    color: red;
+}
+
+.sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    display: none;
+}
+
+.sub li {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub li a {
+    color: #666;
+}
+
+.sub li a:hover {
+    color: red;
+    text-decoration: underline;
+
+}
+
+header {
+    position: relative;
+}
+
+.sub_bg {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background-color: #fdcdbf;
+    border-bottom: 2px solid red;
+    z-index: 1;
+}
+
+.img {
+    width: 100%;
+    text-align: left;
+    padding-left: 300px;
+
+
+}
+
+.search_box {
+    right: 30px;
+    top: 50%;
+    box-sizing: border-box;
+
+}
+
+
+.search_box li {
+    padding: 2px 0;
+
+}
+
+.search_box input {
+    border: 1px solid red;
+    border-radius: 10px;
+    background: url(../images/q2.png) no-repeat left center;
+    padding: 5px 0;
+    padding-left: 15px;
+}
+
+#main_banner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+
+
+
+
+@media (min-width:600px) and (max-width:1199px) {
+    #main_banner {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:599px) {
+
+
+    #main_banner {
+        width: 100%;
+    }
+
+
+}
